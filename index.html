@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holly Johanna</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <base href="http://localhost:63342/portfolio/">
+</head>
+<body>
+<script>
+    AOS.init();
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        var elem = $($.attr(this, 'href'));
+
+        $('html, body').animate({
+            scrollTop: elem.offset().top - (elem.data('anchor-offset') || 50)
+        }, 500);
+    });
+</script>
+<img class="site-icon" src="assets/site-icon.png">
+
+<div class="title-name">
+    <h1>Holly Johanna</h1>
+    <span class="subtitle">Visual Designer</span>
+</div>
+<hr class="header-rule">
+
+<nav class="main-nav">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div id="portfolio" class="container" data-anchor-offset="50">
+    <!--<img class="portfolio-image" src="assets/parrot.gif">-->
+
+    <h2 class="section-head">Portfolio</h2>
+    <hr class="section-rule">
+
+    <a class="portfolio-link" href="girls.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>Girls</h3>
+                Hand-drawn
+            </div>
+        </div>
+        <img class="portfolio-image" src="assets/girl-alien.png">
+    </a>
+    <a class="portfolio-link" href="typography.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>Typography</h3>
+                Hand-drawn and Graphic
+            </div>
+        </div>
+        <img class="portfolio-image" src="assets/type-holly.png">
+    </a>
+    <a class="portfolio-link" href="pony.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>Pony-Lutions</h3>
+                Graphic
+            </div>
+        </div>
+        <img class="portfolio-image pony" src="assets/pony-eevee.png">
+    </a>
+    <a class="portfolio-link" href="icons.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>Icons</h3>
+                Graphic
+            </div>
+        </div>
+        <img class="portfolio-image" src="assets/icons-all.svg">
+    </a>
+    <a class="portfolio-link" href="illustration.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>illustration</h3>
+                graphic and hand-drawn
+            </div>
+        </div>
+        <img class="portfolio-image" src="assets/pony-poster-2.png">
+    </a>
+    <a class="portfolio-link" href="modelling.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h3>3D modelling</h3>
+                models and renders
+            </div>
+        </div>
+        <img class="portfolio-image" src="assets/model-drum2.png">
+    </a>
+
+</div>
+
+<div id="about" class="container about" data-anchor-offset="150" data-aos="fade-up" data-aos-anchor-placement="top-center">
+
+    <h2 class="section-head">About</h2>
+    <hr class="section-rule">
+
+    <img class="holly" src="assets/holly.jpg" >
+
+    <div class="skills-container">
+        <div class="skills">
+            <img class="skills-icon" src="icons/icon-web.svg">
+            <span>Web Design</span>
+        </div>
+
+        <div class="skills">
+            <img class="skills-icon" src="icons/icon-model.svg">
+            <span>3D Modelling</span>
+        </div>
+
+        <div class="skills">
+            <img class="skills-icon" src="icons/icon-logo.svg">
+            <span>Logo Design</span>
+        </div>
+
+        <div class="skills">
+            <img class="skills-icon" src="icons/icon-illustration.svg">
+            <span>Illustration</span>
+        </div>
+
+        <div class="skills">
+            <img class="skills-icon" src="icons/icon-graphic.svg">
+            <span>Graphic Design</span>
+        </div>
+    </div>
+
+    <div class="tools-container">
+
+    </div>
+
+    <div class="about-text">
+        <p>
+            Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
+            fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
+        </p>
+        <p>
+            Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
+            ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
+            urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
+            nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
+            in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
+            commodo ante vitae risus bibendum accumsan a a libero.
+        </p>
+    </div>
+</div>
+
+<div id="contact" class="container contact" data-aos="fade-up" data-aos-anchor-placement="top-center">
+
+    <h2 class="section-head">Contact</h2>
+    <hr class="section-rule">
+
+    <div class="contact-item clearfix">
+        <img class="icon" src="icons/icon-phone.svg">
+        <a href="tel:+44 7392 943235">+44 7392 943 235</a>
+    </div>
+
+    <div class="contact-item clearfix">
+        <img class="icon" src="icons/icon-mail.svg">
+        <a href="mailto:hollyjohanna.robbins@gmail.com">hollyjohanna.robbins@gmail.com</a>
+    </div>
+
+    <div class="contact-item clearfix">
+        <img class="icon" src="icons/icon-instagram.svg">
+        <a href="https://www.instagram.com/johanna_holly/" target="_blank">Johanna_holly</a>
+    </div>
+
+    <div class="contact-item clearfix">
+        <img class="icon" src="icons/icon-linkedin.svg">
+        <a href="https://www.linkedin.com/in/holly-robbins-980b77166/" target="_blank">Holly Robbins</a>
+    </div>
+
+</div>
+</body>
+</html>

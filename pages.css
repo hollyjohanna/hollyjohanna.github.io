@@ -1,0 +1,107 @@
+
+.title-image {
+    display: block;
+    margin: 0 auto;
+
+    width: 70%;
+}
+
+.title-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 100px;
+}
+
+.text-block {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.text-block .page-image {
+    margin-bottom: 25px;
+}
+
+.text-block .page-image.left + .page-image {
+    clear: left;
+}
+
+.text-block .page-image.right + .page-image {
+    clear: right;
+}
+
+.text-area {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-image {
+    width: 33%;
+}
+
+.image-display {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.image-display > div {
+    flex: 0 1 33%;
+    margin: 10px;
+}
+
+.image-display .page-image {
+    width: 100%;
+}
+
+.image-display .hero-image {
+    flex-basis: 50%;
+}
+.main-nav {
+    margin: 100px 0;
+}
+
+.back-button {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+
+    background-color: #fff;
+
+    padding: 10px 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#footer-image {
+    margin-top: 100px;
+}
+
+.large-block .page-image {
+    width: 45%;
+}
+
+.paragraph-title {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+}
