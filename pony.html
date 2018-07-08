@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="vendor/simpleLightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,6 +14,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vendor/simpleLightbox.min.js"></script>
 </head>
 <body>
 <script>
@@ -33,39 +35,38 @@
 <hr id="back-trigger" class="header-rule">
 
 <div class="container">
-    <h2 class="title-text" data-aos="fade-up">Pony-lutions</h2>
-    <hr class="section-rule">
-
-    <div class="image-display" data-aos="fade-up">
-        <div class="hero-image"><img src="assets/pony-group.svg"></div>
-        <!--<div><img class="page-image" src="assets/pony-jolteon.png"></div>-->
-        <!--<div><img class="page-image" src="assets/pony-leafeon.png"></div>-->
-        <!--<div><img class="page-image" src="assets/pony-espeon.png"></div>-->
+    <div data-aos="fade-up">
+        <h2 class="title-text">Pony-lutions</h2>
+        <hr class="section-rule">
     </div>
 
+    <a href="assets/pony-group.svg"><img class="title-image" src="assets/pony-group.svg" data-aos="fade-up"></a>
+
     <div class="text-block clearfix" data-aos="fade-up">
-        <img class="page-image left" src="assets/pony-sylveon.png">
+        <a href="assets/pony-sylveon.png"><img class="page-image left" src="assets/pony-sylveon.png"></a>
 
         <div class="text-area">
             <p>
-                Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
-                fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
+                The Ponys - a mash up of ‘My Little Pony’ and 'Pokemon' characters, are group of characters
+                created as a passion project for two of my interests.
             </p>
             <p>
-                Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
-                ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
-                urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
-                nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
-                in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
-                commodo ante vitae risus bibendum accumsan a a libero.
+                They were designed and composed using Adobe Illustrator and became a project in mixing two different art styles.
+                characters from both the 'My Little Pony' universe and the 'Pokemon' universe were combined
+                whilst continuing to preserve their already defined personality.
+            </p>
+            <p>
+                This collection was created purely as an experiment to explore the possibility of merging two art styles
+                and character designs into one comprehensive piece. They are versatile and detailed as well as a
+                great example of illustrative graphic drawing and character development.
             </p>
         </div>
 
     </div>
     <div class="image-display" data-aos="fade-up">
-        <div><img class="page-image" src="assets/pony-jolteon.png"></div>
-        <div><img class="page-image" src="assets/pony-leafeon.png"></div>
-        <div><img class="page-image" src="assets/pony-espeon.png"></div>
+        <a href="assets/pony-jolteon.png"><img class="page-image" src="assets/pony-jolteon.png"></a>
+        <a href="assets/pony-leafeon.png"><img class="page-image" src="assets/pony-leafeon.png"></a>
+        <a href="assets/pony-espeon.png"><img class="page-image" src="assets/pony-espeon.png"></a>
         <!--<div class="hero-image"><img src="assets/pony-group.svg"></div>-->
         <!--<div><img class="page-image" src="assets/pony-umbreon.png"></div>-->
     </div>
@@ -80,6 +81,10 @@
     <a href="illustration.html">Illustration</a>
     <a href="modelling.html">3D Modelling</a>
 </nav>
+
+<script>
+    $('a[href^=assets]').simpleLightbox();
+</script>
 
 </body>
 </html>

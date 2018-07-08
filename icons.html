@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="vendor/simpleLightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,6 +14,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vendor/simpleLightbox.min.js"></script>
 </head>
 <body>
 
@@ -34,8 +36,10 @@
 <hr id="back-trigger" class="header-rule">
 
 <div class="container">
-    <h2 class="title-text" data-aos="fade-up">Icons</h2>
-    <hr class="section-rule">
+    <div data-aos="fade-up">
+        <h2 class="title-text">Icons</h2>
+        <hr class="section-rule">
+    </div>
 
     <div class="image-display" data-aos="fade-up">
         <div><img class="page-image" src="icons/icon-graphic.svg"></div>
@@ -50,22 +54,20 @@
 
         <div class="text-area">
             <p>
-                Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
-                fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
+                There is a secret little easter-egg to this portfolio - the website itself is a part of it. I designed
+                and built it using basic HTML and CSS.
             </p>
             <p>
-                Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
-                ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
-                urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
-                nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
-                in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
-                commodo ante vitae risus bibendum accumsan a a libero.
+                These are the icons I designed specially for use on this site. <br />(you can see them on the main page)
             </p>
         </div>
 
     </div>
-    <h2 class="title-text" data-aos="fade-up">the candidates</h2>
-    <hr class="section-rule">
+
+    <div data-aos="fade-up">
+        <h2 class="title-text">the candidates</h2>
+        <hr class="section-rule">
+    </div>
 
     <div class="text-block clearfix" data-aos="fade-up">
 
@@ -77,16 +79,9 @@
 
         <div class="text-area">
             <p>
-                Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
-                fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
-            </p>
-            <p>
-                Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
-                ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
-                urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
-                nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
-                in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
-                commodo ante vitae risus bibendum accumsan a a libero.
+                These are the US presidential candidates - After the 2016 election, US politics has been more and more visible in non-US countries.
+                Although I was a year late getting these ready for the election, I wanted to try and create instantly recognizable
+                representations of some of the candidates using simple shapes and colours.
             </p>
         </div>
 
@@ -102,6 +97,10 @@
     <a href="illustration.html">illustration</a>
     <a href="modelling.html">3D Modelling</a>
 </nav>
+
+<script>
+    $('a[href^=assets]').simpleLightbox();
+</script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
     display: block;
     margin: 0 auto;
 
-    width: 70%;
+    width: 50%;
 }
 
 .title-text {
@@ -38,6 +38,7 @@
 .text-area {
     padding: 20px;
 
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,7 +58,11 @@
     width: 100%;
 }
 
-.image-display > div {
+.image-display > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     flex: 0 1 33%;
     margin: 10px;
 }
@@ -66,9 +71,6 @@
     width: 100%;
 }
 
-.image-display .hero-image {
-    flex-basis: 50%;
-}
 .main-nav {
     margin: 100px 0;
 }
@@ -88,10 +90,6 @@
 
 #footer-image {
     margin-top: 100px;
-}
-
-.large-block .page-image {
-    width: 45%;
 }
 
 .paragraph-title {

@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="vendor/simpleLightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,6 +14,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vendor/simpleLightbox.min.js"></script>
 </head>
 <body>
 
@@ -34,31 +36,25 @@
 <hr id="back-trigger" class="header-rule">
 
 <div class="container">
-    <h2 class="title-text" data-aos="fade-up">Typography</h2>
-    <hr class="section-rule">
-
-    <!--<div class="image-display" data-aos="fade-up">-->
-        <!--<div><img class="page-image" src="assets/type-holly.png"></div>-->
-    <!--</div>-->
+    <div data-aos="fade-up">
+        <h2 class="title-text">Typography</h2>
+        <hr class="section-rule">
+    </div>
 
     <div class="text-block clearfix" data-aos="fade-up">
         <div class="image-display">
-            <div><img class="page-image left" src="assets/type-kiaora2.png"></div>
-            <div><img class="page-image left" src="assets/type-holly.png"></div>
-            <div><img class="page-image left"  src="assets/type-ifihad.png"></div>
+            <a href="assets/type-kiaora2.png"><img class="page-image left" src="assets/type-kiaora2.png"></a>
+            <a href="assets/type-holly.png"><img class="page-image left" src="assets/type-holly.png"></a>
+            <a href="assets/type-ifihad.png"><img class="page-image left"  src="assets/type-ifihad.png"></a>
         </div>
         <div class="text-area">
             <p>
-                Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
-                fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
+                These typographical works are created digitally in Procreate, and are an excellent indication of my current ability.
+                There is no rhyme or reason to the works - I just feel connected to them.
             </p>
             <p>
-                Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
-                ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
-                urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
-                nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
-                in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
-                commodo ante vitae risus bibendum accumsan a a libero.
+                "Kia Ora" is important to me because of my Kiwi heritage, and Holly is (of course) my name. The final piece is a rework of a hand-drawn piece I did,
+                and is one of my early digital works.
             </p>
         </div>
 
@@ -66,23 +62,18 @@
 
     <div class="text-block clearfix" data-aos="fade-up">
         <div class="image-display">
-            <div><img class="page-image left" src="assets/type-depression.png"></div>
-            <div><img class="page-image left" src="assets/type-galaxy.png"></div>
-            <div><img class="page-image left" src="assets/type-blackfish.png"></div>
+            <a href="assets/type-galaxy.png"><img class="page-image left" src="assets/type-galaxy.png"></a>
+            <a href="assets/type-depression.png"><img class="page-image left" src="assets/type-depression.png"></a>
+            <a href="assets/type-blackfish.png"><img class="page-image left" src="assets/type-blackfish.png"></a>
         </div>
 
         <div class="text-area">
             <p>
-                Nulla volutpat cursus magna. Sed maximus hendrerit elit in gravida. Sed hendrerit magna sit amet lobortis
-                fringilla. Fusce facilisis nulla id nisl consectetur ornare. Praesent at est erat.
+                These works are some of the hand-drawn works I have completed over several years.
             </p>
             <p>
-                Sed pulvinar risus ac nibh congue maximus. Donec imperdiet sed justo vel vulputate. Nam aliquam nisi arcu,
-                ut maximus magna fringilla ac. Aliquam erat volutpat. Ut vulputate efficitur bibendum. Ut ac diam ornare
-                urna dapibus gravida ut finibus purus. Ut lobortis nisl eu ex pellentesque bibendum. Curabitur placerat quam
-                nunc, sed sodales justo luctus eu. Nulla pulvinar, augue nec feugiat luctus, dolor sapien fermentum purus,
-                in cursus urna libero sit amet ex. Sed hendrerit accumsan metus, eu finibus purus congue sit amet. Proin
-                commodo ante vitae risus bibendum accumsan a a libero.
+                This shows a progression of my style as I have been trying to extend myself, with the first ("Galaxy") being a
+                recent work, and the last ("Blackfish") being completed in my final year of high school.
             </p>
         </div>
 
@@ -98,6 +89,10 @@
     <a href="illustration.html">Illustration</a>
     <a href="modelling.html">3D Modelling</a>
 </nav>
+
+<script>
+    $('a[href^=assets]').simpleLightbox();
+</script>
 
 </body>
 </html>
