@@ -12,6 +12,8 @@
     </script>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Holly Johanna</title>
 
     <link rel="stylesheet" href="style.css">
@@ -28,11 +30,13 @@
 </head>
 <body>
 <script>
-    AOS.init();
+    AOS.init({
+        delay: 250
+    });
 </script>
 
 <a href="index.html#portfolio" class="back-button"
-   data-aos="fade-right" data-aos-anchor="#back-trigger" data-aos-anchor-placement="top-center">
+   data-aos="fade-right" data-aos-anchor="#back-trigger" data-aos-anchor-placement="top-bottom">
     < Back
 </a>
 
@@ -83,7 +87,7 @@
 
 </div>
 
-<nav class="main-nav">
+<nav class="page-nav">
     <a href="girls.html">Girls</a>
     <a href="typography.html">Typography</a>
     <a class="selected" href="pony.html">Ponies</a>

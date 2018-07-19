@@ -12,6 +12,8 @@
     </script>
     
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Holly Johanna</title>
 
     <link rel="stylesheet" href="style.css">
@@ -26,7 +28,9 @@
 </head>
 <body>
 <script>
-    AOS.init();
+    AOS.init({
+        delay: 250
+    });
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
 
@@ -57,7 +61,7 @@
     <h2 class="section-head">Portfolio</h2>
     <hr class="section-rule">
 
-    <a class="portfolio-link" href="girls.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="girls.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>Girls</h3>
@@ -66,7 +70,7 @@
         </div>
         <img class="portfolio-image" src="assets/girl-alien.png">
     </a>
-    <a class="portfolio-link" href="typography.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="typography.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>Typography</h3>
@@ -75,7 +79,7 @@
         </div>
         <img class="portfolio-image" src="assets/type-holly.png">
     </a>
-    <a class="portfolio-link" href="pony.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="pony.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>Pony-Lutions</h3>
@@ -84,7 +88,7 @@
         </div>
         <img class="portfolio-image pony" src="assets/pony-eevee.png">
     </a>
-    <a class="portfolio-link" href="icons.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="icons.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>Icons</h3>
@@ -93,7 +97,7 @@
         </div>
         <img class="portfolio-image" src="assets/icons-all.svg">
     </a>
-    <a class="portfolio-link" href="illustration.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="illustration.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>illustration</h3>
@@ -102,7 +106,7 @@
         </div>
         <img class="portfolio-image" src="assets/pony-poster-2.png">
     </a>
-    <a class="portfolio-link" href="modelling.html" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <a class="portfolio-link" href="modelling.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="overlay">
             <div class="overlay-text">
                 <h3>3D modelling</h3>
@@ -114,7 +118,7 @@
 
 </div>
 
-<div id="about" class="container about" data-anchor-offset="150" data-aos="fade-up" data-aos-anchor-placement="top-center">
+<div id="about" class="container about" data-anchor-offset="150" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
     <h2 class="section-head">About</h2>
     <hr class="section-rule">
@@ -168,7 +172,7 @@
     </div>
 </div>
 
-<div id="contact" class="container contact" data-aos="fade-up" data-aos-anchor-placement="top-center">
+<div id="contact" class="container contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
     <h2 class="section-head">Contact</h2>
     <hr class="section-rule">
