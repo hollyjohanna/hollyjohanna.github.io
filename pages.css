@@ -115,8 +115,17 @@
 }
 
 .image-display.icons > * {
-    flex: 1 0 150px;
+    flex: 0 1 130px;
+    margin: 15px 25px;
 }
+
+@media (max-width: 400px) {
+    .image-display.icons > * {
+        flex: 1 1 94px;
+    }
+}
+
+
 
 .image-display .page-image {
     width: 100%;
